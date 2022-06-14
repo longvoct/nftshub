@@ -1,0 +1,97 @@
+.explore-page {
+  padding-bottom: 20px;
+  &__button {
+    cursor: pointer;
+    width: 206px;
+    height: 61px;
+    background-image: linear-gradient(90deg, #0fe3e3 -25.85%, #54ffff 123.58%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    span {
+      background: linear-gradient(
+        100.54deg,
+        #020e16 -79.1%,
+        rgba(2, 14, 22, 0.51) 214.82%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 20px;
+    }
+  }
+
+  &__slider {
+    cursor: grab;
+    margin-top: 150px;
+    // padding: 0 2rem;
+  }
+
+  &__setup {
+    cursor: pointer;
+    margin-top: 250px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &-step {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 280px;
+      // height: 298px;
+      // background-color: red;
+    }
+    &-image {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      z-index: 2;
+      border-radius: 5px;
+      background-image: linear-gradient(
+        121deg,
+        #ffffff -13.38%,
+        rgba(255, 255, 255, 0) 91.48%
+      );
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+      }
+      &::after {
+        content: "";
+        z-index: 1;
+        position: absolute;
+        width: 78px;
+        height: 78px;
+        border-radius: inherit;
+        top: 1.25px;
+        left: 0.75px;
+        background-image: linear-gradient(
+          116.29deg,
+          rgba(255, 255, 255, 0.35) -29.94%,
+          rgba(255, 255, 255, 0.26) -29.93%,
+          #132029 101.76%
+        );
+      }
+    }
+    h3 {
+      cursor: auto;
+      margin-top: 28px;
+    }
+    p {
+      cursor: auto;
+      margin-top: 55px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 24px;
+      color: #dbdbdb;
+    }
+  }
+}

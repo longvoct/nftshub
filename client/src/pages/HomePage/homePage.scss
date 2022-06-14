@@ -1,0 +1,32 @@
+.home-page {
+  position: relative;
+  cursor: pointer;
+  margin-top: 100px;
+  &__bgc {
+    margin: 85px auto;
+    width: 1270px;
+    height: 351px;
+  }
+  &__title {
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    h3 {
+      font-size: 22px;
+      background: linear-gradient(180deg, #0fe3e3 0%, #c9ddf0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: center;
+    }
+    h1 {
+      margin-top: 47px;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 600;
+      line-height: 75px;
+    }
+  }
+}

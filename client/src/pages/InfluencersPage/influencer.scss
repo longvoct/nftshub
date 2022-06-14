@@ -1,0 +1,124 @@
+.influencer {
+  margin: 180px 85px;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 0 14px;
+    h3 {
+      font-size: 20px;
+    }
+    h1 {
+      margin-top: 15px;
+      font-size: 40px;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    background-image: linear-gradient(90deg, #0fe3e3 -25.85%, #54ffff 123.58%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      color: #132029;
+    }
+  }
+
+  &-desc {
+    margin: 70px 267px;
+    p {
+      text-align: center;
+      line-height: 30px;
+      font-weight: 300;
+    }
+  }
+
+  &-contact {
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__item {
+      width: 284px;
+      height: 458px;
+      background-color: #132029;
+      position: relative;
+      text-align: center;
+    }
+
+    &__coverImage {
+      height: 60%;
+      object-fit: cover;
+      clip-path: ellipse(90% 60% at 50% 30%);
+    }
+    &__avatar {
+      width: 105px;
+      height: 105px;
+      border-radius: 50%;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &__name {
+      margin-top: 30px;
+    }
+
+    &__button {
+      margin: 15px auto;
+      width: 103px;
+      height: 28px;
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-image: linear-gradient(
+        93.1deg,
+        #54ffff 2.73%,
+        rgba(35, 255, 202, 0.67) 37.85%,
+        rgba(84, 255, 255, 0.36) 109.59%
+      );
+
+      &::after {
+        content: "";
+        width: 101px;
+        height: 26px;
+        border-radius: inherit;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        background-color: #132029;
+      }
+
+      span {
+        position: absolute;
+        z-index: 999;
+        background: linear-gradient(180deg, #0fe3e3 0%, #c9ddf0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+    }
+
+    &__followers {
+      margin-top: 27px;
+      padding: 0 17px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
