@@ -1,0 +1,217 @@
+.createNFT {
+  margin-top: 266px;
+  padding: 0 85px;
+  padding-bottom: 2rem;
+  &-box {
+    width: 1214px;
+    height: 439px;
+    position: relative;
+    background-image: radial-gradient(
+        21.19% 40.1% at 100.03% 0%,
+        rgba(0, 0, 0, 0.5) 0%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      radial-gradient(
+        24.21% 39.21% at 0% 0%,
+        rgba(255, 255, 255, 0.81) 0%,
+        rgba(255, 255, 255, 0.19) 100%
+      ),
+      radial-gradient(
+        98% 49.86% at 100.03% 100%,
+        #474848 0%,
+        rgba(242, 248, 245, 0.05) 100%
+      );
+    border-radius: 10px;
+    margin: 0 auto;
+    z-index: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 1211px;
+      height: 435px;
+      background: linear-gradient(
+        106.15deg,
+        rgba(255, 255, 255, 0.11) 3.27%,
+        rgba(255, 255, 255, 0.11) 103.35%
+      );
+      z-index: 3;
+      backdrop-filter: blur(40px);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: inherit;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1211px;
+      height: 435px;
+      border-radius: inherit;
+      background-color: #020e16;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // background-color: red;
+      z-index: 1;
+    }
+
+    &__beGround {
+      top: 10px;
+      left: 55px;
+      position: absolute;
+      z-index: 2;
+    }
+    &__feGround {
+      position: absolute;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      // align-items: center;
+    }
+
+    &__text {
+      width: 45%;
+      margin-top: 68px;
+      margin-left: 77px;
+      text-align: left;
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        margin-top: 25px;
+        color: #d7f0ef;
+        font-weight: 300;
+        line-height: 30px;
+        padding-right: 20px;
+      }
+    }
+    &__feImg {
+      margin-top: 50px;
+      padding-right: 20px;
+      img {
+        width: 415px;
+      }
+    }
+    &__button {
+      margin-top: 40px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+      &-create {
+        cursor: pointer;
+        width: 150px;
+        height: 53px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border-radius: 30px;
+        background-image: linear-gradient(
+          93.1deg,
+          #54ffff 2.73%,
+          rgba(35, 255, 202, 0.67) 37.85%,
+          rgba(84, 255, 255, 0.36) 109.59%
+        );
+        &:after {
+          content: "";
+          z-index: 1;
+          border-radius: inherit;
+          position: absolute;
+          width: 148px;
+          height: 51px;
+          top: 1px;
+          left: 1px;
+          background-color: #132029;
+        }
+        span {
+          background: linear-gradient(180deg, #0fe3e3 0%, #c9ddf0 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          position: absolute;
+          z-index: 999;
+        }
+      }
+      &-explore {
+        cursor: pointer;
+        width: 170px;
+        height: 50px;
+        background-image: linear-gradient(
+          90deg,
+          #0fe3e3 -25.85%,
+          #54ffff 123.58%
+        );
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+          color: #132029;
+        }
+      }
+    }
+  }
+
+  &-meet {
+    margin-top: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+      margin-top: 0 14px;
+      h3 {
+        font-size: 20px;
+      }
+      h1 {
+        margin-top: 15px;
+        font-size: 40px;
+      }
+    }
+    &__button {
+      cursor: pointer;
+      width: 170px;
+      height: 50px;
+      background-image: linear-gradient(
+        90deg,
+        #0fe3e3 -25.85%,
+        #54ffff 123.58%
+      );
+      border-radius: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: #132029;
+      }
+    }
+  }
+
+  &-characters {
+    margin-top: 125px;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    &__name {
+      margin-top: 25px;
+    }
+    &__crt {
+      width: 167px;
+      height: 161px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        width: 100px;
+        border-radius: 50%;
+      }
+      span {
+        font-weight: 300;
+      }
+    }
+  }
+}

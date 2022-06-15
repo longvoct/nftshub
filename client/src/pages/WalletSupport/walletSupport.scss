@@ -1,0 +1,53 @@
+.walletSupport {
+  margin-top: 165px;
+  padding: 0 85px;
+  text-align: center;
+  &-title {
+    span {
+      font-size: 40px;
+    }
+  }
+  &-list {
+    margin-top: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-item {
+    width: 200px;
+    height: 252px;
+    background-color: #132029;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    img {
+      margin-top: 34px;
+      height: 128px;
+    }
+    &__button {
+      margin-bottom: 25px;
+      padding: 0.5px 0.75px 1px 1px;
+      border-radius: 30px;
+      background-image: linear-gradient(
+        93.1deg,
+        #54ffff 2.73%,
+        rgba(35, 255, 202, 0.67) 37.85%,
+        rgba(84, 255, 255, 0.36) 109.59%
+      );
+      button {
+        background-color: #132029;
+        padding: 8px 15px;
+        outline: none;
+        border: none;
+        border-radius: inherit;
+        span {
+          background: linear-gradient(180deg, #0fe3e3 0%, #c9ddf0 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      }
+    }
+  }
+}

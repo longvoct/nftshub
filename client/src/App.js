@@ -5,6 +5,9 @@ import ExplorePage from "./pages/ExplorePage/ExplorePage";
 import ActionPage from "./pages/LiveActionPage/ActionPage";
 import BestSelling from "./pages/BestSelling/BestSelling";
 import Influencer from "./pages/InfluencersPage/Influencer";
+import CreateNFT from "./pages/CreateNft/CreateNFT";
+import WalletSupport from "./pages/WalletSupport/WalletSupport";
+import Footer from "./pages/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <ActionPage></ActionPage>
       <BestSelling></BestSelling>
       <Influencer></Influencer>
+      <CreateNFT></CreateNFT>
+      <WalletSupport></WalletSupport>
+      <Footer></Footer>
     </div>
   );
 }
