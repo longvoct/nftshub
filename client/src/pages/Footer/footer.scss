@@ -5,6 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    
     &__email {
       text-align: left;
       width: 50%;
@@ -20,6 +21,7 @@
         letter-spacing: 0.5px;
       }
     }
+    
     &__manipulation {
       margin-top: 30px;
       display: flex;
@@ -38,6 +40,7 @@
         margin-right: 50px;
       }
     }
+    
     &__input {
       border-radius: 40px;
       background-color: #fff;
@@ -70,6 +73,7 @@
         }
       }
     }
+    
     &__social {
       text-align: left;
       span {
