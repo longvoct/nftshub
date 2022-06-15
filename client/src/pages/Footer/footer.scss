@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    
+
     &__email {
       text-align: left;
       width: 50%;
@@ -21,7 +21,7 @@
         letter-spacing: 0.5px;
       }
     }
-    
+
     &__manipulation {
       margin-top: 30px;
       display: flex;
@@ -40,7 +40,7 @@
         margin-right: 50px;
       }
     }
-    
+
     &__input {
       border-radius: 40px;
       background-color: #fff;
@@ -73,8 +73,9 @@
         }
       }
     }
-    
+
     &__social {
+      width: 40%;
       text-align: left;
       span {
         font-size: 25px;
@@ -84,7 +85,7 @@
     &__list {
       margin-top: 25px;
       display: flex;
-      justify-content: space-between;
+      // justify-content: space-between;
       align-items: center;
       flex-direction: row;
       column-gap: 15px;
@@ -92,6 +93,98 @@
 
     &__icon {
       width: 50px;
+    }
+  }
+}
+
+.footer {
+  &-desc {
+    margin-top: 90px;
+    &__line {
+      height: 1px;
+      width: 100%;
+      background-image: linear-gradient(180deg, #0fe3e3 0%, #0fe3e3 100%);
+    }
+
+    &__container {
+      margin-top: 65px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    &__left {
+      width: 30%;
+      span {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      p {
+        display: inline-block;
+        margin-top: 28px;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #dafdfc;
+      }
+    }
+
+    &__right {
+      width: 70%;
+      padding-left: 85px;
+      display: grid;
+      span {
+        background: linear-gradient(180deg, #0fe3e3 0%, #c9ddf0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        display: inline-block;
+        margin-bottom: 35px;
+        font-weight: 500;
+        font-size: 18px;
+      }
+      li {
+        margin-bottom: 19px;
+        font-weight: 300;
+      }
+      grid-template-areas:
+        "l1 l2 l3 l4"
+        "l1 .  l3 l4"
+        "l1 l5 l3 l4"
+        "l1 .   .  .";
+    }
+
+    &__menu:first-child {
+      grid-area: l1;
+    }
+
+    &__menu:nth-child(2) {
+      grid-area: l2;
+    }
+    &__menu:nth-child(3) {
+      grid-area: l3;
+    }
+
+    &__menu:nth-child(4) {
+      grid-area: l4;
+    }
+
+    &__menu:nth-child(5) {
+      margin-top: 80px;
+      grid-area: l5;
+    }
+
+    &__policy {
+      margin-top: 32px;
+      padding-bottom: 32px;
+      text-align: right;
+      font-size: 12px;
+      font-weight: 300;
+      span {
+        margin-left: 30px;
+      }
     }
   }
 }
